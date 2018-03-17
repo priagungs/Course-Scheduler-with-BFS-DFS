@@ -21,34 +21,42 @@ namespace CourseScheduler
             nodeDestroyed = new int[graphEl.Length];
         }
 
+        //Method yang digunakan untuk membaca dan parsing file *.txt
         private void readFromFile(String filename)
         {
-            //ini mulai bagian penting__________________________________________________________
+            //VARIABEL LOKAL
             int i = 0;
             char[] delimiterChars = { ' ', ',', '.' };
-            //ganti @"/path" format string harus <@"X:\example\path\example.txt">
+            //chae untuk split kode/nama kuliah
             string[] lines = File.ReadAllLines(@filename);
             string[][] kode = new string[lines.Length][];
+
+            //INSTANTIASI VARIABEL KELAS GRAPH
             graphEl = new string[lines.Length];
 
+            //Parse kode kuliah(tidak boleh ada spasi)
             for (i = 0; i < lines.Length; i++)
             {
                 kode[i] = lines[i].Split(delimiterChars, StringSplitOptions.RemoveEmptyEntries);
                 graphEl[i] = kode[i][0];
             }
+
+            //instantiasi variabel kelas graph, Matriks Ketetanggaan
             graph = new bool[kode.Length, kode.Length];
-            for (i = 0; i < graphEl.Length; i++)
+            i = 0;
+            foreach (var k1 in kode)//untuk setiap baris
             {
-                foreach (var k1 in kode)
+                foreach(var k2 in k1)//untuk setiap kode kuliah 
                 {
-                    int j = Array.IndexOf(k1, graphEl[i]);
-                    if (j >= 0)
+                    //centang kode yang ada pada list kode dan tidak yang sama
+                    int j = Array.IndexOf(graphEl,k2);
+                    if (j >= 0 && i != j)
                     {
-                        graph[i, j] = true;
+                        graph[j, i] = true;
                     }
                 }
+                i += 1;
             }
-            //ini akhir bagian penting__________________________________________________________
 
             //print adjacency matrix ke cmd
             for (i = 0; i < graphEl.Length; i++)
@@ -66,10 +74,6 @@ namespace CourseScheduler
                 }
                 Console.WriteLine(" ");
             }
-
-            // Keep the console window open in debug mode.
-           // Console.WriteLine("Press any key to exit.");
-            // System.Console.ReadKey();
         }
 
         public void DFSSolution()

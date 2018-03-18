@@ -64,7 +64,7 @@ namespace CourseScheduler
 
             //print adjacency matrix ke cmd
             //for debugging purpose
-            /*
+           /* 
             for (i = 0; i < graphEl.Length; i++)
             {
                 for (int j = 0; j < graphEl.Length; j++)
@@ -81,14 +81,11 @@ namespace CourseScheduler
                 Console.WriteLine(" ");
             }
             */
+            
         }
-
 
         public void DFSSolution()
         {
-            //find first node
-            int firstNode = -1;
-
             //for debugging purpose
             /*
             for (int i=0; i<graphEl.Length; i++)
@@ -97,70 +94,33 @@ namespace CourseScheduler
             }
             */
 
-            for(int col = 0; col < graphEl.Length; col++)
+            for (int col = 0; col < graphEl.Length; col++)
             {
                 bool found = true;
-                for(int row = 0; row < graphEl.Length; row++)
+                for (int row = 0; row < graphEl.Length; row++)
                 {
-                    if (graph[row,col])
+                    if (graph[row, col])
                     {
                         found = false;
                     }
                 }
-                if (found)
+                if (found && nodeDestroyed[col] == 0)
                 {
-                    firstNode = col;
-                    break;
+                    DFS(col);
                 }
             }
 
             //for debugging purpose
             // Console.WriteLine("First node : " + firstNode);
 
-            counter = 0;
-            if (firstNode != -1)
-            {
-                DFS(firstNode);
-            }
-
-            //find adjacentless nodes 
-            for(int i=0; i<graphEl.Length; i++)
-            {
-                bool found = false;
-                for(int j=0; j<graphEl.Length; j++)
-                {
-                    if(graph[i,j])
-                    {
-                        found = true;
-                        break;
-                    }
-                }
-                if (!found)
-                {
-                    for(int j=0; j<graphEl.Length; j++)
-                    {
-                        if (graph[j,i])
-                        {
-                            found = true;
-                            break;
-                        }
-                    }
-                }
-                if (!found)
-                {
-                    counter++;
-                    nodeDestroyed[i] = counter;
-                }
-            }
-
             // for debugging purpose
-            /* Console.WriteLine("Node Destroyed : ");
+            Console.WriteLine("Node Destroyed : ");
             for(int i=0; i<nodeDestroyed.Length; i++)
             {
                 Console.Write(nodeDestroyed[i] + " ");
             }
             Console.Write('\n');
-            */
+            
 
             Dictionary<int, int> nodeTimeStamp = new Dictionary<int, int>();
             for(int i=0; i<nodeDestroyed.Length; i++)

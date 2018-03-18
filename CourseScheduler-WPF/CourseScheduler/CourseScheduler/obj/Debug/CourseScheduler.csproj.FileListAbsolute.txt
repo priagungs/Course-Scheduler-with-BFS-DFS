@@ -1,0 +1,15 @@
+D:\Kuliah\Teknik Informatika\Semester 2\Strategi Algoritma\Tubes 2\repo\CourseScheduler\Course-Scheduler-with-BFS-DFS\WPF\CourseScheduler\CourseScheduler\obj\Debug\CourseScheduler.csprojResolveAssemblyReference.cache
+D:\Kuliah\Teknik Informatika\Semester 2\Strategi Algoritma\Tubes 2\repo\CourseScheduler\Course-Scheduler-with-BFS-DFS\WPF\CourseScheduler\CourseScheduler\obj\Debug\MainWindow.g.cs
+D:\Kuliah\Teknik Informatika\Semester 2\Strategi Algoritma\Tubes 2\repo\CourseScheduler\Course-Scheduler-with-BFS-DFS\WPF\CourseScheduler\CourseScheduler\obj\Debug\App.g.cs
+D:\Kuliah\Teknik Informatika\Semester 2\Strategi Algoritma\Tubes 2\repo\CourseScheduler\Course-Scheduler-with-BFS-DFS\WPF\CourseScheduler\CourseScheduler\obj\Debug\CourseScheduler_MarkupCompile.cache
+D:\Kuliah\Teknik Informatika\Semester 2\Strategi Algoritma\Tubes 2\repo\CourseScheduler\Course-Scheduler-with-BFS-DFS\WPF\CourseScheduler\CourseScheduler\obj\Debug\CourseScheduler_MarkupCompile.lref
+D:\Kuliah\Teknik Informatika\Semester 2\Strategi Algoritma\Tubes 2\repo\CourseScheduler\Course-Scheduler-with-BFS-DFS\WPF\CourseScheduler\CourseScheduler\bin\Debug\CourseScheduler.exe.config
+D:\Kuliah\Teknik Informatika\Semester 2\Strategi Algoritma\Tubes 2\repo\CourseScheduler\Course-Scheduler-with-BFS-DFS\WPF\CourseScheduler\CourseScheduler\bin\Debug\CourseScheduler.exe
+D:\Kuliah\Teknik Informatika\Semester 2\Strategi Algoritma\Tubes 2\repo\CourseScheduler\Course-Scheduler-with-BFS-DFS\WPF\CourseScheduler\CourseScheduler\bin\Debug\CourseScheduler.pdb
+D:\Kuliah\Teknik Informatika\Semester 2\Strategi Algoritma\Tubes 2\repo\CourseScheduler\Course-Scheduler-with-BFS-DFS\WPF\CourseScheduler\CourseScheduler\obj\Debug\MainWindow.baml
+D:\Kuliah\Teknik Informatika\Semester 2\Strategi Algoritma\Tubes 2\repo\CourseScheduler\Course-Scheduler-with-BFS-DFS\WPF\CourseScheduler\CourseScheduler\obj\Debug\CourseScheduler.g.resources
+D:\Kuliah\Teknik Informatika\Semester 2\Strategi Algoritma\Tubes 2\repo\CourseScheduler\Course-Scheduler-with-BFS-DFS\WPF\CourseScheduler\CourseScheduler\obj\Debug\CourseScheduler.Properties.Resources.resources
+D:\Kuliah\Teknik Informatika\Semester 2\Strategi Algoritma\Tubes 2\repo\CourseScheduler\Course-Scheduler-with-BFS-DFS\WPF\CourseScheduler\CourseScheduler\obj\Debug\CourseScheduler.csproj.GenerateResource.cache
+D:\Kuliah\Teknik Informatika\Semester 2\Strategi Algoritma\Tubes 2\repo\CourseScheduler\Course-Scheduler-with-BFS-DFS\WPF\CourseScheduler\CourseScheduler\obj\Debug\CourseScheduler.csproj.CoreCompileInputs.cache
+D:\Kuliah\Teknik Informatika\Semester 2\Strategi Algoritma\Tubes 2\repo\CourseScheduler\Course-Scheduler-with-BFS-DFS\WPF\CourseScheduler\CourseScheduler\obj\Debug\CourseScheduler.exe
+D:\Kuliah\Teknik Informatika\Semester 2\Strategi Algoritma\Tubes 2\repo\CourseScheduler\Course-Scheduler-with-BFS-DFS\WPF\CourseScheduler\CourseScheduler\obj\Debug\CourseScheduler.pdb

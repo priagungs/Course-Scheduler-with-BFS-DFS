@@ -10,15 +10,19 @@ namespace CourseScheduler
     class Graph
     {
         private String[] graphEl;
-        private bool[,] graph; //baris ditunjuk, kolom menunjuk
+        private bool[,] graph; //baris menunjuk, kolom ditunjuk
+        private bool[] flag;
         private int[] solution;
         private int[] nodeDestroyed; //for timestamp
+        private int counter;
 
         public Graph(String filename)
         {
             readFromFile(filename);
             solution = new int[graphEl.Length];
             nodeDestroyed = new int[graphEl.Length];
+            flag = new bool[graphEl.Length];
+            counter = 0;
         }
 
         //Method yang digunakan untuk membaca dan parsing file *.txt
@@ -59,6 +63,8 @@ namespace CourseScheduler
             }
 
             //print adjacency matrix ke cmd
+            //for debugging purpose
+            /*
             for (i = 0; i < graphEl.Length; i++)
             {
                 for (int j = 0; j < graphEl.Length; j++)
@@ -74,16 +80,27 @@ namespace CourseScheduler
                 }
                 Console.WriteLine(" ");
             }
+            */
         }
+
 
         public void DFSSolution()
         {
             //find first node
             int firstNode = -1;
-            for(int row = 0; row < graphEl.Length; row++)
+
+            //for debugging purpose
+            /*
+            for (int i=0; i<graphEl.Length; i++)
+            {
+                Console.WriteLine(graphEl[i] + ' ' + i);
+            }
+            */
+
+            for(int col = 0; col < graphEl.Length; col++)
             {
                 bool found = true;
-                for(int col = 0; col < graphEl.Length; col++)
+                for(int row = 0; row < graphEl.Length; row++)
                 {
                     if (graph[row,col])
                     {
@@ -92,15 +109,18 @@ namespace CourseScheduler
                 }
                 if (found)
                 {
-                    firstNode = row;
+                    firstNode = col;
                     break;
                 }
             }
 
-            int count = 0;
+            //for debugging purpose
+            // Console.WriteLine("First node : " + firstNode);
+
+            counter = 0;
             if (firstNode != -1)
             {
-                DFS(firstNode, ref count);
+                DFS(firstNode);
             }
 
             //find adjacentless nodes 
@@ -128,39 +148,67 @@ namespace CourseScheduler
                 }
                 if (!found)
                 {
-                    count++;
-                    nodeDestroyed[i] = count;
+                    counter++;
+                    nodeDestroyed[i] = counter;
                 }
             }
 
-            int index = 0;
-            while(nodeDestroyed.Length != 0)
+            // for debugging purpose
+            /* Console.WriteLine("Node Destroyed : ");
+            for(int i=0; i<nodeDestroyed.Length; i++)
             {
-                int maxval = nodeDestroyed.Max();
-                int max_el_idx = Array.IndexOf(nodeDestroyed, maxval);
-                solution[index] = max_el_idx;
-                nodeDestroyed = nodeDestroyed.Where(val => val != maxval).ToArray();
-                index++;
+                Console.Write(nodeDestroyed[i] + " ");
+            }
+            Console.Write('\n');
+            */
+
+            Dictionary<int, int> nodeTimeStamp = new Dictionary<int, int>();
+            for(int i=0; i<nodeDestroyed.Length; i++)
+            {
+                nodeTimeStamp.Add(i, nodeDestroyed[i]);
+            }
+            Array.Sort(nodeDestroyed);
+            Array.Reverse(nodeDestroyed);
+            for(int i=0; i<nodeDestroyed.Length; i++)
+            {
+                for(int j=0; j<nodeDestroyed.Length; j++)
+                {
+                    if(nodeTimeStamp[j] == nodeDestroyed[i])
+                    {
+                        solution[i] = j;
+                    }
+                }
             }
 
-            for(int i=0; i<graphEl.Length; i++)
+            Console.WriteLine("Solution : ");
+
+            //for debugging purpose
+            /*
+            for(int i=0; i<solution.Length; i++)
             {
-                Console.WriteLine(graphEl[solution[i]] + ' ');
+                Console.Write(solution[i] + " ");
             }
-            Console.WriteLine("Press any key to terminate..\n");
+            Console.Write('\n');
+            */
+
+            for (int i=0; i<graphEl.Length; i++)
+            {
+                Console.Write(graphEl[solution[i]] + ' ');
+            }
+            Console.WriteLine("\nPress any key to terminate..\n");
             Console.ReadKey();
-            //Console.WriteLine(nodeDestroyed);
         
         }
 
-        private void DFS(int node, ref int counter)
+        private void DFS(int node)
         {
             counter++;
-            for(int branch = 0; branch < graphEl.Length; branch++)
+            flag[node] = true;
+            for (int branch = 0; branch < graphEl.Length; branch++)
             {
-                if(graph[branch, node])
+                if(graph[node, branch] && !flag[branch])
                 {
-                    DFS(branch, ref counter);
+                    DFS(branch);
                 }
             }
             counter++;

@@ -1,0 +1,15 @@
+D:\Kuliah\Teknik Informatika\Semester 2\Strategi Algoritma\Tubes 2\repo\WPF CourseScheduler\WpfApp1\WpfApp1\bin\Debug\WpfApp1.exe.config
+D:\Kuliah\Teknik Informatika\Semester 2\Strategi Algoritma\Tubes 2\repo\WPF CourseScheduler\WpfApp1\WpfApp1\bin\Debug\WpfApp1.exe
+D:\Kuliah\Teknik Informatika\Semester 2\Strategi Algoritma\Tubes 2\repo\WPF CourseScheduler\WpfApp1\WpfApp1\bin\Debug\WpfApp1.pdb
+D:\Kuliah\Teknik Informatika\Semester 2\Strategi Algoritma\Tubes 2\repo\WPF CourseScheduler\WpfApp1\WpfApp1\obj\Debug\CourseScheduler.csprojResolveAssemblyReference.cache
+D:\Kuliah\Teknik Informatika\Semester 2\Strategi Algoritma\Tubes 2\repo\WPF CourseScheduler\WpfApp1\WpfApp1\obj\Debug\MainWindow.g.cs
+D:\Kuliah\Teknik Informatika\Semester 2\Strategi Algoritma\Tubes 2\repo\WPF CourseScheduler\WpfApp1\WpfApp1\obj\Debug\App.g.cs
+D:\Kuliah\Teknik Informatika\Semester 2\Strategi Algoritma\Tubes 2\repo\WPF CourseScheduler\WpfApp1\WpfApp1\obj\Debug\WpfApp1_MarkupCompile.cache
+D:\Kuliah\Teknik Informatika\Semester 2\Strategi Algoritma\Tubes 2\repo\WPF CourseScheduler\WpfApp1\WpfApp1\obj\Debug\WpfApp1_MarkupCompile.lref
+D:\Kuliah\Teknik Informatika\Semester 2\Strategi Algoritma\Tubes 2\repo\WPF CourseScheduler\WpfApp1\WpfApp1\obj\Debug\MainWindow.baml
+D:\Kuliah\Teknik Informatika\Semester 2\Strategi Algoritma\Tubes 2\repo\WPF CourseScheduler\WpfApp1\WpfApp1\obj\Debug\WpfApp1.g.resources
+D:\Kuliah\Teknik Informatika\Semester 2\Strategi Algoritma\Tubes 2\repo\WPF CourseScheduler\WpfApp1\WpfApp1\obj\Debug\WpfApp1.Properties.Resources.resources
+D:\Kuliah\Teknik Informatika\Semester 2\Strategi Algoritma\Tubes 2\repo\WPF CourseScheduler\WpfApp1\WpfApp1\obj\Debug\CourseScheduler.csproj.GenerateResource.cache
+D:\Kuliah\Teknik Informatika\Semester 2\Strategi Algoritma\Tubes 2\repo\WPF CourseScheduler\WpfApp1\WpfApp1\obj\Debug\CourseScheduler.csproj.CoreCompileInputs.cache
+D:\Kuliah\Teknik Informatika\Semester 2\Strategi Algoritma\Tubes 2\repo\WPF CourseScheduler\WpfApp1\WpfApp1\obj\Debug\WpfApp1.exe
+D:\Kuliah\Teknik Informatika\Semester 2\Strategi Algoritma\Tubes 2\repo\WPF CourseScheduler\WpfApp1\WpfApp1\obj\Debug\WpfApp1.pdb

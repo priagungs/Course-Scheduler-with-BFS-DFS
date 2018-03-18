@@ -1,0 +1,27 @@
+﻿<Window x:Class="CollegeGraph.AppWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CollegeGraph"
+        mc:Ignorable="d"
+        Title="College Scheduler App" Height="300" Width="400">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush/>
+        </Grid.Background>
+        <TextBox Name="Filepath" Height="26" Margin="10,122,0,0" TextWrapping="Wrap" Text="Input Filename/Filepath here" Width="372" HorizontalAlignment="Left" VerticalAlignment="Top" BorderBrush="{x:Null}" TextChanged="Filepath_TextChanged" GotFocus="TextBox_Focus" Background="#FF992C2C" Foreground="White"/>
+        <Label Content="CollegeScheduler" HorizontalAlignment="Left" Margin="5,81,0,0" VerticalAlignment="Top" Height="36" Width="204" FontFamily="Unispace" FontWeight="Bold" FontSize="20"/>
+        <Button Content="OK" HorizontalAlignment="Left" Height="26" Margin="304,167,0,0" VerticalAlignment="Top" Width="78" Click="Button_Click"/>
+
+        <Popup Name="fnfound" StaysOpen="False" Placement="Bottom">
+            <TextBlock x:Name="Popup" 
+                            Foreground="#FFC70000" 
+                            Background="White" 
+                            FontWeight="Bold" 
+                            FontStyle="Italic"><Run Text="File not found"/>
+
+            </TextBlock>
+        </Popup>
+    </Grid>
+</Window>

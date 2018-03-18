@@ -177,7 +177,7 @@ namespace CourseScheduler
 
         public void BFS()
         {
-            derajatMasuk = new int[graphEl.Length];
+            int[] derajatMasuk = new int[graphEl.Length];
 
             //hitung semua derajat-masuk (in-degree) setiap simpul
             for(int col = 0; col < graphEl.Length; col++)

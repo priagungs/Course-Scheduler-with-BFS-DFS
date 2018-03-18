@@ -30,15 +30,13 @@ namespace CourseScheduler
             InitializeComponent();
         }
 
-        private void DFS_Button_Click(object sender, RoutedEventArgs e)
+        private void Print_Solution()
         {
-            scheduleGraph = new Graph(fileName);
-            scheduleGraph.DFSSolution();
             String s = "";
             int smt = 1;
             s += "Semester " + smt + ": ";
             int[] smtCourses = new int[scheduleGraph.solution.Length];
-            for(int i=0; i<smtCourses.Length; i++)
+            for (int i = 0; i < smtCourses.Length; i++)
             {
                 smtCourses[i] = -1;
             }
@@ -47,11 +45,9 @@ namespace CourseScheduler
             for (int i = 1; i < scheduleGraph.graphEl.Length; i++)
             {
                 bool proper = true;
-                foreach(int element in smtCourses)
+                foreach (int element in smtCourses)
                 {
-                    Console.WriteLine(element);
-                    Console.WriteLine();
-                    if(element != -1 && scheduleGraph.graph[element, scheduleGraph.solution[i]])
+                    if (element != -1 && scheduleGraph.graph[element, scheduleGraph.solution[i]])
                     {
                         proper = false;
                     }
@@ -63,9 +59,9 @@ namespace CourseScheduler
                 }
                 else
                 {
-                    foreach(int element in smtCourses)
+                    foreach (int element in smtCourses)
                     {
-                        if(element != -1)
+                        if (element != -1)
                         {
                             s += scheduleGraph.graphEl[element] + " ";
                         }
@@ -90,9 +86,19 @@ namespace CourseScheduler
             textBoxSol.Text = s;
         }
 
+        private void DFS_Button_Click(object sender, RoutedEventArgs e)
+        {
+            scheduleGraph = new Graph(fileName);
+            scheduleGraph.DFSSolution();
+            Print_Solution();
+            
+        }
+
         private void BFS_Button_Click(object sender, RoutedEventArgs e)
         {
-
+            scheduleGraph = new Graph(fileName);
+            scheduleGraph.BFSSolution();
+            Print_Solution();
         }
 
         private void OpenFile(object sender, RoutedEventArgs e)

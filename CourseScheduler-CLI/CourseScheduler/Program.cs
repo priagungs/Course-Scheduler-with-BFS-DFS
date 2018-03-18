@@ -180,29 +180,44 @@ namespace CourseScheduler
             int[] derajatMasuk = new int[graphEl.Length];
 
             //hitung semua derajat-masuk (in-degree) setiap simpul
-            for(int col = 0; col < graphEl.Length; col++)
+            for (int col = 0; col < graphEl.Length; col++)
             {
                 int count = 0;
-                for(int row = 0; row < graphEl.Length; row++)
+                for (int row = 0; row < graphEl.Length; row++)
                 {
-                    if (graph[row,col])
+                    if (graph[row, col])
                     {
                         count++;
                     }
                 }
                 derajatMasuk[col] = count;
             }
-            
+
+            //for debugging purpose
+            /*
+            for (int i = 0; i < graphEl.Length; i++)
+            {
+                Console.Write(graphEl[i] + " ");
+            }
+            Console.Write('\n');
+
+            for (int i = 0; i < derajatMasuk.Length; i++)
+            {
+                Console.Write(derajatMasuk[i] + " ");
+            }
+            Console.Write('\n');
+            */
+
             int idxs = -1;
             int idxbawah = -1;
-            
+
             //diulang sampai semua simpul terpilih
-            while(idxs < graphEl.Length)
+            while (idxs < graphEl.Length - 1)
             {
                 //Pilih simpul yang memiliki derajat-masuk 0(masuk ke array solusi), hilangkan simpul tersebut(derajatMasuk = -1)
-                for(int col = 0; col < graphEl.Length; col++)
+                for (int col = 0; col < graphEl.Length; col++)
                 {
-                    if(derajatMasuk[col] == 0)
+                    if (derajatMasuk[col] == 0)
                     {
                         idxs++;
                         solution[idxs] = col;
@@ -210,15 +225,17 @@ namespace CourseScheduler
                     }
                 }
 
+                //for debugging purpose & for path to solution
+
                 //kurangi derajat simpul yang berhubungan dengan simpul yang diambil dengan 1
-                for(int col = 0; col < graphEl.Length; col++)
+                for (int col = 0; col < graphEl.Length; col++)
                 {
-                    for(int row = 0; row < graphEl.Length; row++)
+                    for (int row = 0; row < graphEl.Length; row++)
                     {
                         int i = 0;
-                        while(i <= idxs)
+                        while (i <= idxs)
                         {
-                            if ((graph[row,col]) && (row == solution[i]) && (i > idxbawah))
+                            if ((graph[row, col]) && (row == solution[i]) && (i > idxbawah))
                             {
                                 derajatMasuk[col]--;
                             }

@@ -114,13 +114,13 @@ namespace CourseScheduler
             // Console.WriteLine("First node : " + firstNode);
 
             // for debugging purpose
-            Console.WriteLine("Node Destroyed : ");
+            /*Console.WriteLine("Node Destroyed : ");
             for(int i=0; i<nodeDestroyed.Length; i++)
             {
                 Console.Write(nodeDestroyed[i] + " ");
             }
             Console.Write('\n');
-            
+            */
 
             Dictionary<int, int> nodeTimeStamp = new Dictionary<int, int>();
             for(int i=0; i<nodeDestroyed.Length; i++)

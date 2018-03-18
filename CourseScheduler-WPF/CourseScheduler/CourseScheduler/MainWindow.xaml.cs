@@ -32,11 +32,12 @@ namespace CourseScheduler
 
         private void DFS_Button_Click(object sender, RoutedEventArgs e)
         {
+            scheduleGraph = new Graph(fileName);
             scheduleGraph.DFSSolution();
             String s = "";
             for (int i = 0; i < scheduleGraph.solution.Length; i++)
             {
-                s += scheduleGraph.graphEl[scheduleGraph.solution[i]] + ", ";
+                s += scheduleGraph.graphEl[scheduleGraph.solution[i]] + " ";
             }
             textBoxSol.Text = s;
         }
@@ -54,7 +55,7 @@ namespace CourseScheduler
             {
                 fileName = System.IO.Path.GetFullPath(openFileDialog.FileName);
                 directoryName.Text = fileName;
-                scheduleGraph = new Graph(fileName);
+                
             }
         }
     }

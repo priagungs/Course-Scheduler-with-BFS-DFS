@@ -9,11 +9,11 @@
     <Grid>
         <Button Content="Solve with DFS" HorizontalAlignment="Left" Margin="80,297,0,0" VerticalAlignment="Top" Width="146" Height="65" Click="DFS_Button_Click"/>
         <Button Content="Solve with BFS" HorizontalAlignment="Left" Margin="257,297,0,0" VerticalAlignment="Top" Width="147" Height="65" Click="BFS_Button_Click"/>
-        <Button Content="Open File" HorizontalAlignment="Left" Margin="80,86,0,0" VerticalAlignment="Top" Width="324" Height="43" Click="OpenFile"/>
+        <Button Content="Open File" HorizontalAlignment="Left" Margin="80,81,0,0" VerticalAlignment="Top" Width="324" Height="43" Click="OpenFile"/>
 
         <Label Content="Course Scheduler" HorizontalAlignment="Left" Margin="45,0,0,0" VerticalAlignment="Top" Height="81" Width="397" FontSize="50"/>
-        <TextBox Name="textBoxSol" Margin="80,226,73,109"/>
-        <Label Content="Solution" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="188,184,199,0" Width="90" FontSize="20"/>
-        <TextBox Name="directoryName" Margin="80,142,73,208"/>
+        <TextBox Name="textBoxSol" Margin="80,185,73,109"/>
+        <Label Content="Solution" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="210,154,202,0" Width="65" FontSize="15" Height="26"/>
+        <TextBox Name="directoryName" Margin="80,129,73,238"/>
     </Grid>
 </Window>

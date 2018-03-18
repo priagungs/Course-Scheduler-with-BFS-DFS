@@ -177,7 +177,57 @@ namespace CourseScheduler
 
         public void BFS()
         {
+            derajatMasuk = new int[graphEl.Length];
 
+            //hitung semua derajat-masuk (in-degree) setiap simpul
+            for(int col = 0; col < graphEl.Length; col++)
+            {
+                int count = 0;
+                for(int row = 0; row < graphEl.Length; row++)
+                {
+                    if (graph[row,col])
+                    {
+                        count++;
+                    }
+                }
+                derajatMasuk[col] = count;
+            }
+            
+            int idxs = -1;
+            int idxbawah = -1;
+            
+            //diulang sampai semua simpul terpilih
+            while(idxs < graphEl.Length)
+            {
+                //Pilih simpul yang memiliki derajat-masuk 0(masuk ke array solusi), hilangkan simpul tersebut(derajatMasuk = -1)
+                for(int col = 0; col < graphEl.Length; col++)
+                {
+                    if(derajatMasuk[col] == 0)
+                    {
+                        idxs++;
+                        solution[idxs] = col;
+                        derajatMasuk[col] = -1;
+                    }
+                }
+
+                //kurangi derajat simpul yang berhubungan dengan simpul yang diambil dengan 1
+                for(int col = 0; col < graphEl.Length; col++)
+                {
+                    for(int row = 0; row < graphEl.Length; row++)
+                    {
+                        int i = 0;
+                        while(i <= idxs)
+                        {
+                            if ((graph[row,col]) && (row == solution[i]) && (i > idxbawah))
+                            {
+                                derajatMasuk[col]--;
+                            }
+                            i++;
+                        }
+                    }
+                }
+                idxbawah = idxs;
+            }
         }
 
         public void Visualize()

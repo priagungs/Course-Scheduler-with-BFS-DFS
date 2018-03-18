@@ -10,7 +10,7 @@ namespace CourseScheduler
     class Graph
     {
         public String[] graphEl;
-        private bool[,] graph; //baris menunjuk, kolom ditunjuk
+        public bool[,] graph; //baris menunjuk, kolom ditunjuk
         private bool[] flag;
         public int[] solution;
         private int[] nodeDestroyed; //for timestamp
@@ -64,7 +64,8 @@ namespace CourseScheduler
 
             //print adjacency matrix ke cmd
             //for debugging purpose
-           /* 
+            
+            /*
             for (i = 0; i < graphEl.Length; i++)
             {
                 for (int j = 0; j < graphEl.Length; j++)
@@ -81,6 +82,7 @@ namespace CourseScheduler
                 Console.WriteLine(" ");
             }
             */
+            
             
         }
 

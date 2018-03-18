@@ -14,6 +14,6 @@
         <Label Content="Course Scheduler" HorizontalAlignment="Left" Margin="45,0,0,0" VerticalAlignment="Top" Height="81" Width="397" FontSize="50"/>
         <TextBox Name="textBoxSol" Margin="80,185,73,109"/>
         <Label Content="Solution" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="210,154,202,0" Width="65" FontSize="15" Height="26"/>
-        <TextBox Name="directoryName" Margin="80,129,73,238"/>
+        <TextBox Name="directoryName" Margin="80,129,73,233"/>
     </Grid>
 </Window>

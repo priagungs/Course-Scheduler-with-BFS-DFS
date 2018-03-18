@@ -243,7 +243,8 @@ namespace CourseScheduler
             Console.WriteLine("Insert file name : ");
             String filename = Console.ReadLine();
             Graph graph = new Graph(filename);
-            graph.DFSSolution();
+            //graph.DFSSolution();
+            graph.BFS();
             Console.ReadKey();
         }
     }

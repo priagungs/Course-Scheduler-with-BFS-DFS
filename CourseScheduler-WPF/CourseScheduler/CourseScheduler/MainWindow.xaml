@@ -1,0 +1,19 @@
+﻿<Window x:Class="CourseScheduler.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CourseScheduler"
+        mc:Ignorable="d"
+        Title="CourseScheduler" Height="418.5" Width="485">
+    <Grid>
+        <Button Content="Solve with DFS" HorizontalAlignment="Left" Margin="80,297,0,0" VerticalAlignment="Top" Width="146" Height="65" Click="DFS_Button_Click"/>
+        <Button Content="Solve with BFS" HorizontalAlignment="Left" Margin="257,297,0,0" VerticalAlignment="Top" Width="147" Height="65" Click="BFS_Button_Click"/>
+        <Button Content="Open File" HorizontalAlignment="Left" Margin="80,86,0,0" VerticalAlignment="Top" Width="324" Height="43" Click="OpenFile"/>
+
+        <Label Content="Course Scheduler" HorizontalAlignment="Left" Margin="45,0,0,0" VerticalAlignment="Top" Height="81" Width="397" FontSize="50"/>
+        <TextBox Name="textBoxSol" Margin="80,226,73,109"/>
+        <Label Content="Solution" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="188,184,199,0" Width="90" FontSize="20"/>
+        <TextBox Name="directoryName" Margin="80,142,73,208"/>
+    </Grid>
+</Window>

@@ -14,6 +14,7 @@ namespace CourseScheduler
         private bool[] flag;
         public int[] solution;
         private int[] nodeDestroyed; //for timestamp
+        public List<int> visitedNode;
         private int counter;
 
         public Graph(String filename)
@@ -23,6 +24,7 @@ namespace CourseScheduler
             nodeDestroyed = new int[graphEl.Length];
             flag = new bool[graphEl.Length];
             counter = 0;
+            visitedNode = new List<int>();
         }
 
         //Method yang digunakan untuk membaca dan parsing file *.txt
@@ -156,6 +158,7 @@ namespace CourseScheduler
         private void DFS(int node)
         {
             counter++;
+            visitedNode.Add(node);
             flag[node] = true;
             for (int branch = 0; branch < graphEl.Length; branch++)
             {
@@ -166,6 +169,7 @@ namespace CourseScheduler
             }
             counter++;
             nodeDestroyed[node] = counter;
+            visitedNode.Add(node);
         }
         public void BFSSolution()
         {

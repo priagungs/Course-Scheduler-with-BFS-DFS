@@ -1,0 +1,29 @@
+﻿<Window x:Class="CollegeGraph.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CollegeGraph"
+        mc:Ignorable="d"
+        Title="CourseScheduler" Height="418.5" Width="485">
+    <Grid>
+        <Button Content="Solve with DFS" HorizontalAlignment="Left" Margin="80,297,0,0" VerticalAlignment="Top" Width="146" Height="65" Click="DFS_Button_Click"/>
+        <Button Content="Solve with BFS" HorizontalAlignment="Left" Margin="257,297,0,0" VerticalAlignment="Top" Width="147" Height="65" Click="BFS_Button_Click"/>
+        <Button Content="{StaticResource foldericon}" HorizontalAlignment="Left" Margin="356,128,0,0" VerticalAlignment="Top" Width="31" Height="21" Click="OpenFile"/>
+        <!-- folder icon made by Smashicons from www.flaticon.com is licensed by CC 3.0 BY -->
+        <Label Content="Course Scheduler" HorizontalAlignment="Left" Margin="58,29,0,0" VerticalAlignment="Top" Height="74" Width="385" FontSize="45" FontFamily="Segoe UI Semilight"/>
+        <TextBox Name="textBoxSol" Margin="80,226,73,109"/>
+        <Label Content="Solution" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="80,184,307,0" Width="90" FontSize="20"/>
+        <TextBox Name="directoryName" Height="21" Margin="80,128,0,0" TextWrapping="Wrap" Text="Filename/Filepath" Width="271" HorizontalAlignment="Left" VerticalAlignment="Top" BorderBrush="#FF7A7A7A" GotFocus="TextBox_Focus" Background="White" Foreground="#FF5D5D5D"/>
+
+        <Popup Name="fnfound" StaysOpen="False" Placement="Bottom" VerticalOffset="-20">
+            <TextBlock x:Name="Popup" 
+                            Foreground="#FFC70000" 
+                            Background="White" 
+                            FontWeight="Bold"
+                            FontStyle="Italic"><Run Text="File not found"/>
+
+            </TextBlock>
+        </Popup>
+    </Grid>
+</Window>

@@ -13,10 +13,12 @@ namespace CollegeGraph
         private int[] nodeDestroyed; //for timestamp
         public static List<int> visitedNode;
         private int counter;
+        public static List<Graph> LoG;
+
 
         public Graph(String filename)
         {
-            readFromFile(filename);
+            ReadFromFile(filename);
             solution = new int[graphEl.Length];
             nodeDestroyed = new int[graphEl.Length];
             flag = new bool[graphEl.Length];
@@ -25,7 +27,7 @@ namespace CollegeGraph
         }
 
         //Method yang digunakan untuk membaca dan parsing file *.txt
-        private void readFromFile(String filename)
+        private void ReadFromFile(String filename)
         {
             //VARIABEL LOKAL
             int i = 0;
@@ -236,11 +238,6 @@ namespace CollegeGraph
                 }
                 idxbawah = idxs;
             }
-        }
-
-        public void Visualize()
-        {
-
         }
     }
 }

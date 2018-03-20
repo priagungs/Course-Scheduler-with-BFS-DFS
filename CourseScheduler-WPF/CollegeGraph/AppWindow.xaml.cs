@@ -91,10 +91,8 @@ namespace CollegeGraph
             scheduleGraph = new Graph(fileName);
             scheduleGraph.DFSSolution();
             Print_Solution();
-            GView graphView = new GView();
-            graphView.Show();
-            graphView.Animate();
-
+            var Layout = new GraphLayout();
+            Layout.Show();
 
         }
 
@@ -103,6 +101,8 @@ namespace CollegeGraph
             scheduleGraph = new Graph(fileName);
             scheduleGraph.BFSSolution();
             Print_Solution();
+            var Layout = new GraphLayout();
+            Layout.Show();
         }
 
         private void OpenFile(object sender, RoutedEventArgs e)

@@ -57,3 +57,37 @@ D:\Kuliah\Teknik Informatika\Semester 2\Strategi Algoritma\Tubes 2\repo\CollegeG
 D:\Kuliah\Teknik Informatika\Semester 2\Strategi Algoritma\Tubes 2\repo\CollegeGraph\CollegeGraph\obj\Debug\CollegeGraph.csproj.GenerateResource.cache
 D:\Kuliah\Teknik Informatika\Semester 2\Strategi Algoritma\Tubes 2\repo\CollegeGraph\CollegeGraph\obj\Debug\CollegeGraph.csproj.CoreCompileInputs.cache
 D:\Kuliah\Teknik Informatika\Semester 2\Strategi Algoritma\Tubes 2\repo\CollegeGraph\CollegeGraph\obj\Debug\CollegeGraph.csproj.CopyComplete
+C:\Users\user\source\repos\CourseScheduler-WPF\CollegeGraph\obj\Debug\CollegeGraph.csprojResolveAssemblyReference.cache
+C:\Users\user\source\repos\CourseScheduler-WPF\CollegeGraph\obj\Debug\AppWindow.g.cs
+C:\Users\user\source\repos\CourseScheduler-WPF\CollegeGraph\obj\Debug\App.g.cs
+C:\Users\user\source\repos\CourseScheduler-WPF\CollegeGraph\obj\Debug\CollegeGraph_MarkupCompile.cache
+C:\Users\user\source\repos\CourseScheduler-WPF\CollegeGraph\obj\Debug\CollegeGraph_MarkupCompile.lref
+C:\Users\user\source\repos\CourseScheduler-WPF\CollegeGraph\obj\Debug\CollegeGraph.exe
+C:\Users\user\source\repos\CourseScheduler-WPF\CollegeGraph\obj\Debug\CollegeGraph.pdb
+C:\Users\user\source\repos\CourseScheduler-WPF\CollegeGraph\bin\Debug\CollegeGraph.exe.config
+C:\Users\user\source\repos\CourseScheduler-WPF\CollegeGraph\bin\Debug\CollegeGraph.exe
+C:\Users\user\source\repos\CourseScheduler-WPF\CollegeGraph\bin\Debug\CollegeGraph.pdb
+C:\Users\user\source\repos\CourseScheduler-WPF\CollegeGraph\bin\Debug\GraphSharp.Controls.dll
+C:\Users\user\source\repos\CourseScheduler-WPF\CollegeGraph\bin\Debug\GraphSharp.dll
+C:\Users\user\source\repos\CourseScheduler-WPF\CollegeGraph\bin\Debug\Microsoft.Msagl.dll
+C:\Users\user\source\repos\CourseScheduler-WPF\CollegeGraph\bin\Debug\Microsoft.Msagl.Drawing.dll
+C:\Users\user\source\repos\CourseScheduler-WPF\CollegeGraph\bin\Debug\Microsoft.Msagl.GraphViewerGdi.dll
+C:\Users\user\source\repos\CourseScheduler-WPF\CollegeGraph\bin\Debug\QuickGraph.Data.dll
+C:\Users\user\source\repos\CourseScheduler-WPF\CollegeGraph\bin\Debug\QuickGraph.dll
+C:\Users\user\source\repos\CourseScheduler-WPF\CollegeGraph\bin\Debug\QuickGraph.Graphviz.dll
+C:\Users\user\source\repos\CourseScheduler-WPF\CollegeGraph\bin\Debug\QuickGraph.Serialization.dll
+C:\Users\user\source\repos\CourseScheduler-WPF\CollegeGraph\bin\Debug\WPFExtensions.dll
+C:\Users\user\source\repos\CourseScheduler-WPF\CollegeGraph\bin\Debug\Microsoft.Msagl.xml
+C:\Users\user\source\repos\CourseScheduler-WPF\CollegeGraph\bin\Debug\Microsoft.Msagl.Drawing.xml
+C:\Users\user\source\repos\CourseScheduler-WPF\CollegeGraph\bin\Debug\Microsoft.Msagl.GraphViewerGdi.xml
+C:\Users\user\source\repos\CourseScheduler-WPF\CollegeGraph\bin\Debug\QuickGraph.xml
+C:\Users\user\source\repos\CourseScheduler-WPF\CollegeGraph\bin\Debug\QuickGraph.Data.xml
+C:\Users\user\source\repos\CourseScheduler-WPF\CollegeGraph\bin\Debug\QuickGraph.Graphviz.xml
+C:\Users\user\source\repos\CourseScheduler-WPF\CollegeGraph\bin\Debug\QuickGraph.Serialization.xml
+C:\Users\user\source\repos\CourseScheduler-WPF\CollegeGraph\obj\Debug\App.baml
+C:\Users\user\source\repos\CourseScheduler-WPF\CollegeGraph\obj\Debug\AppWindow.baml
+C:\Users\user\source\repos\CourseScheduler-WPF\CollegeGraph\obj\Debug\CollegeGraph.g.resources
+C:\Users\user\source\repos\CourseScheduler-WPF\CollegeGraph\obj\Debug\CollegeGraph.Properties.Resources.resources
+C:\Users\user\source\repos\CourseScheduler-WPF\CollegeGraph\obj\Debug\CollegeGraph.csproj.GenerateResource.Cache
+C:\Users\user\source\repos\CourseScheduler-WPF\CollegeGraph\obj\Debug\CollegeGraph.csproj.CoreCompileInputs.cache
+C:\Users\user\source\repos\CourseScheduler-WPF\CollegeGraph\obj\Debug\CollegeGraph.GraphLayout.resources

@@ -214,10 +214,9 @@ namespace CollegeGraph
                         idxs++;
                         solution[idxs] = col;
                         derajatMasuk[col] = -1;
+                        visitedNode.Add(col);
                     }
                 }
-
-                //for debugging purpose & for path to solution
 
                 //kurangi derajat simpul yang berhubungan dengan simpul yang diambil dengan 1
                 for (int col = 0; col < graphEl.Length; col++)
